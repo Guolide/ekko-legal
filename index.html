@@ -63,7 +63,7 @@
 <body>
   <header>
     <h1>Politique de confidentialité — EKꓘO</h1>
-    <p>Dernière mise à jour : 21 juin 2026</p>
+    <p>Dernière mise à jour : 28 juin 2026</p>
   </header>
 
   <main>
@@ -116,16 +116,31 @@
     </p>
     <ul>
       <li><strong>Supabase</strong> — hébergement de la base de données et des fichiers de l'espace communautaire.</li>
-      <li><strong>Anthropic</strong> (modèle d'IA « Claude ») — reçoit des <strong>statistiques agrégées</strong> uniquement lorsque tu demandes une analyse (voir section 6). Traitement aux États-Unis. Ces données ne sont pas utilisées pour entraîner ses modèles dans ce cadre.</li>
+      <li><strong>Anthropic</strong> (modèle d'IA « Claude ») — reçoit, lorsque tu demandes une analyse (voir section 6), des <strong>statistiques agrégées</strong> de ton journal et, <strong>uniquement si tu l'actives explicitement récit par récit</strong>, le <strong>texte des récits que tu choisis de partager</strong>. Traitement aux États-Unis. Ces données ne sont pas utilisées pour entraîner ses modèles dans ce cadre.</li>
     </ul>
 
     <h2>6. Analyse assistée par IA (« L'analyse d'EKꓘO »)</h2>
     <p>
-      Lorsque tu demandes le compte rendu « L'analyse d'EKꓘO », des <strong>statistiques agrégées</strong>
-      de ton journal — <strong>jamais le texte de tes récits</strong> — sont envoyées à notre fonction
-      serveur (Supabase) puis au modèle d'IA d'<strong>Anthropic</strong>, qui rédige l'analyse. Ce
-      traitement n'a lieu qu'à ta demande explicite. Tu peux choisir de <strong>ne pas inclure certaines
-      données</strong> (par exemple ton sommeil) via les options de l'analyse.
+      Lorsque tu demandes le compte rendu « L'analyse d'EKꓘO », des données de ton journal sont
+      envoyées à notre fonction serveur (Supabase) puis au modèle d'IA d'<strong>Anthropic</strong>,
+      qui rédige l'analyse. Ce traitement n'a lieu qu'à <strong>ta demande explicite</strong>.
+    </p>
+    <p>
+      <strong>Par défaut</strong>, seules des <strong>données structurées</strong> sont transmises
+      (types d'expériences, humeurs, durées, déroulé, intentions, et éventuellement tes mots-clés) —
+      <strong>pas le texte de tes récits</strong>.
+    </p>
+    <p>
+      <strong>Partage de récits (optionnel).</strong> Tu peux choisir, <strong>récit par récit</strong>,
+      d'activer « Partager avec l'analyse d'EKꓘO ». Dans ce cas, et <strong>uniquement pour les récits
+      que tu as cochés</strong>, le <strong>texte intégral</strong> de ces récits est envoyé à Anthropic
+      lors de ta prochaine analyse, afin d'affiner le compte rendu. Une confirmation t'explique cet envoi
+      avant la première activation, et tu peux <strong>retirer un récit du partage à tout moment</strong>
+      (il ne sera plus transmis lors des analyses suivantes).
+    </p>
+    <p>
+      Tu peux également choisir de <strong>ne pas inclure certaines catégories</strong> de données
+      (par exemple ton sommeil ou tes mots-clés) via les options de l'analyse.
     </p>
 
     <h2>7. Santé et sommeil (Health Connect)</h2>
